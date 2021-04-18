@@ -8,8 +8,6 @@ const fetchMovie = async (searchInput) => {
   const apiKey = "c7fe7839";
   const apiKey2 = "4c11a62";
 
-  // await sequelize.sync({ force: true });
-
 
   const res = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&i=${searchInput}`)
   const movie = await res.json();
